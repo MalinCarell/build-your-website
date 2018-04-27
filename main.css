@@ -1,4 +1,3 @@
-
 body {
 display: flex;
 flex-direction: column;
@@ -7,6 +6,7 @@ align-items: center;
 margin-top: 150px;
 background: linear-gradient(red, yellow, blue);
 }
+
 
 h1 {
   font-weight: lighter;
@@ -37,7 +37,7 @@ input {
 }
 
 button {
-    background-color: #ff33cc; /* Purple */
+    background-color: #ff33cc;
     border: none;
     color: white;
     padding: 10px 24px;

@@ -2,24 +2,33 @@
 <html lang=en>
   <head>
     <meta charset=utf-8>
-    <title>Malin's Website</title>
+    <title>Help me choose</title>
     <link href="./main.css" rel="stylesheet" type="text/css"
   </head>
   <body>
-    <h1>Malin's First Website...</h1>
+    <h1>Help me choose between...</h1>
     <div class="inputSection">
       <div class="inputs">
-        <input placeholder="Enter your question!"></input>
+        <input placeholder="Something!"></input>
       </div>
-      <button class="addOption">Click me!</button>
+      <button class="addOption">Add</button>
     </div>
-    <button>Go Go Go!</button>
+    <div class="resultSection"></div>
+    <button>Go!</button>
     <div>
-      <img src=https://i.ytimg.com/vi/opKg3fyqWt4/hqdefault.jpg>
-    </div>
-    <div>
-    <h3>Enter your name!</h3>
-    <input type="text" name="fname">
-  </div>
+          <img src=https://i.ytimg.com/vi/opKg3fyqWt4/hqdefault.jpg>
+        </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script>
+    $(function() {
+      $('.resultSection').hide()
+
+  var add_option = function() {
+    $('.inputs').append('<input></input>')
+  }
+
+  $('.addOption').click(add_option)
+})
+  </script>
   </body>
 </html>
